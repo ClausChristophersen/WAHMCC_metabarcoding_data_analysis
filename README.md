@@ -1,6 +1,17 @@
 # WAHMCC_metabarcoding_data_analysis
 This repository contains code and information on how the TrEnD_Lab conducts exploratory metabarcoding data analysis. R and shell are used for code. 
 
+**A summary of what and how we do metabarcoding**
+
+The metabarcoding bioinformatics pipeline that we have developed in our laboratory has been designed to address the biases and inconsistencies observed in metabarcoding research. We identify these biases in the early stages of the bioinformatics process by removing all non-biological sequences such as adapters, primers and low quality bases as well as during the clustering and taxonomy allocation stages. 
+
+Our stringent protocols are in harmony with maintaining a low level of contamination as well as sufficient recovery rate of target sequences due to our unique dual sequence barcoding that we associated with each sample for the purposes of multiplexing and contamination avoidance. Finally we use DADA2 to pick our amplicon sequence variants not the usual 97% clustering approach operational taxonomic units (OTUs). 
+
+DADA2 is a sequence denoising algorithm that applies sophisticated statistical and machine learning approaches to learn the error profiles of each of the target sequences and uses that information to make the best inference about the true bases of each short read sequence which are then binned together at 100% similarity as exact sequence variants (ASVs). Then using a trained naïve bayes classifier the ASVs are assigned taxonomy to Genus and sometimes to Species level (dependent of the length of and region of the marker gene sequenced) against a curated database of microbial reference sequences such as the RDP, SILVA, GTDB and NCBI's 16SMicrobial. 
+
+The tools we use include FastQC for read quality visualization, Shi7 and GHAPv2 for demultiplexing and preprocessing of samples, cutadapt for removal of all non-biological sequences. Finally we use the R programming language to invoke DADA2 for quality filtering, error correction, ASV picking and the package Phyloseq for preliminary statistical data exploration.
+
+
 ## Bioinformatics tools installation
 * There is a script in the code/ folder that will do this for you.*
 
