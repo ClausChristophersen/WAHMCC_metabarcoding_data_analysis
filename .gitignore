@@ -34,3 +34,18 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# raw DNA files
+*.fastq
+*.fq
+*.fastq.gz
+*fq.gz
+
+#processed DNA files
+*.fasta
+*.fasta.gz
+*.fa
+*.fa.gz
+*.faa
+*.fna
+

@@ -1,0 +1,16 @@
+SampleID	opacity	centrifuge	extraction	qubit	dilution	pool	rfu
+SC1_v4	cloudy	rmp	column	40	10	1	18835.56
+SC2_v4	cloudy	rmp	column	20	10	1	9572.31
+SC3_v4	clear	rmp	column	1	10	1	449.26
+SC4_v4	cloudy	rmp	column	21	10	1	10202.62
+SC5_v4	clear	rmp	column	4	10	1	1908.29
+SC6_v4	clear	rmp	column	4	10	1	2063.69
+SCExt_v4	clear	rmp	column	0	10	3	45.86
+MB1_v4	cloudy	g	magnet	39	10	2	18397.13
+MB2_v4	cloudy	g	magnet	10	10	2	4846.91
+MB3_v4	clear	g	magnet	1	10	2	530.08
+MB4_v4	cloudy	g	magnet	14	10	2	6838.67
+MB5_v4	clear	g	magnet	5	10	2	2190.71
+MB6_v4	clear	g	magnet	7	10	2	3151.31
+MBExt_v4	clear	g	magnet	0	10	2	47.01
+ATCC_v4	clear	atcc	atcc	4	10	3	2000
